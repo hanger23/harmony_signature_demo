@@ -1,0 +1,41 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "storePassword": "00000019199CF3D25522076FBD09B4D5F7777EB8A1FFF74A83DFC9600569DAEDE4E099BFCFEF8F3E33",
+          "certpath": "./test1.cer",
+          "keyAlias": "my_alias",
+          "keyPassword": "000000198B5CB85F82484DEA4023C91BC94CDF774F368BCACFF7785DE74D0CCD631E3029FB7F082CFD",
+          "profile": "./test_debug.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "./my_strore.p12"
+        }
+      }
+    ],
+    "compileSdkVersion": 9,
+    "compatibleSdkVersion": 9,
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
