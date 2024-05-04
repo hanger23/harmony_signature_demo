@@ -42,4 +42,12 @@ https://gitee.com/openharmony/developtools_packing_tool/tree/OpenHarmony-3.1-Rel
 material 目录不能删，它是配置完签名后sync now后生成的。
 如果删了，请在 Project Structure 中 重新输入签名密码后再重新sync now。
 
+///////////////////////////////////////////////////////////////////////////
+
+
+命令打release hap包
+./hvigorw clean assembleHap --no-daemon --mode module -p product=default -p debuggable=false
+
+
+
 

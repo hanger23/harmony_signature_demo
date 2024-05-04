@@ -5,12 +5,19 @@
         "name": "default",
         "type": "HarmonyOS",
         "material": {
+          //密钥库密码
           "storePassword": "00000019199CF3D25522076FBD09B4D5F7777EB8A1FFF74A83DFC9600569DAEDE4E099BFCFEF8F3E33",
+          //调试或发布证书文件，格式为.cer
           "certpath": "./test1.cer",
+          //密钥别名
           "keyAlias": "my_alias",
+          //密钥密码
           "keyPassword": "000000198B5CB85F82484DEA4023C91BC94CDF774F368BCACFF7785DE74D0CCD631E3029FB7F082CFD",
+          //调试或发布证书Profile文件
           "profile": "./test_debug.p7b",
+          //密钥库signAlg参数
           "signAlg": "SHA256withECDSA",
+          //密钥库文件
           "storeFile": "./my_strore.p12"
         }
       }
